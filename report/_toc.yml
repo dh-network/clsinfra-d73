@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: 0_index
+chapters:
+- file: 1_summary
+- file: 2_introduction
+- file: 3-1_versioning_living_corpora
+- file: 3-2_gerdracor_corpus_archeology
+- file: 4_dockerizing_dracor
+- file: 5_outlook
+- file: bibliography
+
