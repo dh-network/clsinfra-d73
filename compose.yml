@@ -1,0 +1,16 @@
+services:
+  d73-dind-jupyterlab:
+    image: "clsinfra/d73-dind-jupyterlab"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: d73-dind-jupyterlab
+    privileged: true
+    environment:
+      - GITHUB_TOKEN
+    ports:
+      - "8889:8889"
+    volumes:
+      - ./report:/home/d73/report/
+      - ./export:/home/d73/export/
+      - ./import:/home/d73/import/
